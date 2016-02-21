@@ -1,6 +1,8 @@
 google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(function(){
-    drawBackgroundColor(weather_data.temparature, 'Temperature', 'chart_div');
+    drawBackgroundColor(weather_data.temperature, 'Temperature', 'temperature');
+    drawBackgroundColor(weather_data.humidity, 'Humidity', 'humidity');
+    drawBackgroundColor(weather_data.moisture, 'Moisture', 'moisture');
 });
 
 function drawBackgroundColor(rows, legend, el_id) {
